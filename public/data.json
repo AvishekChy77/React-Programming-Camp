@@ -1,0 +1,65 @@
+[
+  {
+    "image": "https://i.ibb.co/SRFLMvG/course-1.png",
+    "course_name": "Introduction to C Programming",
+    "course_details": "This comprehensive course is designed for beginners.",
+    "credit": 3,
+    "price": 49.99
+  },
+  {
+    "image": "https://i.ibb.co/q7ZcJ62/course-2.jpg",
+    "course_name": "Introduction to Algorithms",
+    "course_details": "Explore the world of algorithms and solve complex problems.",
+    "credit": 4,
+    "price": 69.99
+  },
+  {
+    "image": "https://i.ibb.co/ZVcYKS4/course-3.png",
+    "course_name": "Introduction to C++ for DSA",
+    "course_details": "Master C++ programming and data structures to excel.",
+    "credit": 6,
+    "price": 59.99
+  },
+  {
+    "image": "https://i.ibb.co/gr1v6qh/course-4.png",
+    "course_name": "Basic Data Structures",
+    "course_details": "Get a solid foundation in essential data structures like arrays.",
+    "credit": 2,
+    "price": 39.99
+  },
+  {
+    "image": "https://i.ibb.co/f9RTQFH/course-5.png",
+    "course_name": "Introduction to OOP Python",
+    "course_details": "Learn object-oriented programming principles using Python.",
+    "credit": 3,
+    "price": 49.99
+  },
+  {
+    "image": "https://i.ibb.co/qspH9h6/course-6.jpg",
+    "course_name": "Software Engineering",
+    "course_details": "Dive into the world of software engineering and development.",
+    "credit": 4,
+    "price": 79.99
+  },
+  {
+    "image": "https://i.ibb.co/zJZmDhB/Rectangle-7.jpg",
+    "course_name": "AWS, Cloud Computing",
+    "course_details": "Explore Amazon Web Services and cloud computing concepts.",
+    "credit": 5,
+    "price": 59.99
+  },
+  {
+    "image": "https://i.ibb.co/56Zjy9z/Rectangle-8.jpg",
+    "course_name": "Database (MySQL)",
+    "course_details": "Learn the ins and outs of MySQL, database management system.",
+    "credit": 2,
+    "price": 44.99
+  },
+  {
+    "image": "https://i.ibb.co/5shV2LH/Rectangle-9.jpg",
+    "course_name": "Problem-Solving Part",
+    "course_details": "Hone your problem-solving skills & Techniques through exercises.",
+    "credit": 9,
+    "price": 29.99
+  }
+]
