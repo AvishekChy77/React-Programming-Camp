@@ -1,9 +1,8 @@
 import { NavLink } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 
 const Navbar = () => {
-  //   const handleLogOut = () => {
-
-  //   };
+  const { user, logOut } = useAuth();
 
   const Navbar = (
     <>
@@ -15,7 +14,7 @@ const Navbar = () => {
       </NavLink>
       <NavLink
         className="bg-slate-100 hover:bg-slate-300 text-lg font-semibold mr-2 rounded px-2 py-1"
-        to="/login"
+        to="/signin"
       >
         Login
       </NavLink>
@@ -60,25 +59,45 @@ const Navbar = () => {
             {Navbar}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">Phoneix</a>
+        <a className="btn btn-ghost normal-case text-xl font-bold">
+          <p>
+            <span className=" text-cyan-600">P</span>rogramming{" "}
+            <span className=" text-rose-600">C</span>amp
+          </p>
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{Navbar}</ul>
       </div>
       <div className="navbar-end">
-        {/* {user ? (
-          <>
-            <span>{user.email}</span>
-            <a onClick={handleLogOut} className="btn btn-sm">
-              Sign out
-            </a>
-          </>
+        {user?.email ? (
+          <div className="dropdown dropdown-end">
+            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+              <div className="w-10 rounded-full">
+                <img src={user.photoURL} alt="" />
+              </div>
+            </label>
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <button className="btn btn-sm btn-ghost">
+                  {user.displayName}
+                </button>
+              </li>
+              <li>
+                <button onClick={logOut} className="btn btn-sm btn-ghost">
+                  Logout
+                </button>
+              </li>
+            </ul>
+          </div>
         ) : (
-          <NavLink className="btn btn-sm" to="/login">
-            Log In
+          <NavLink to="/signin">
+            <button className="btn btn-sm btn-ghost">LogIn</button>
           </NavLink>
-        )} */}
-        <button className="btn btn-sm">LogIn</button>
+        )}
       </div>
     </div>
   );

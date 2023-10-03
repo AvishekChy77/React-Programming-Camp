@@ -40,7 +40,7 @@ function Home() {
     }
   };
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className=" max-w-sm md:max-w-7xl mx-auto p-5">
       <div className="md:flex gap-5">
         <Cards handleAddToCart={handleAddToCart}></Cards>
         <Carts
